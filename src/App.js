@@ -1,24 +1,31 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ListingPage from './pages/ListingPage/ListingPage';
+import { Container } from "@mui/system";
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
+import BookMark from './pages/BookMarkPage/BookMark';
+import SearchComp from './pages/SearchPage/SearchComp';
+import {GlobalProvider} from "./context/GlobalState";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <BrowserRouter>
+<Header/>
+<GlobalProvider>
+<div className="app">
+ <Container>
+          <Routes>
+            <Route exact path="/" element={<ListingPage />} />
+            <Route exact path="/bookmark" element={<BookMark />} />
+            <Route exact path="/search" element={<SearchComp />} />
+          </Routes>
+        </Container>
     </div>
+</GlobalProvider>
+    <Footer/>
+    </BrowserRouter>
+   
   );
 }
 
