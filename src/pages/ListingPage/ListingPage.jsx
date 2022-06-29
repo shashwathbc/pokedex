@@ -2,6 +2,7 @@ import React  , {useEffect , useState , useContext}from 'react';
 import SinglePokemonCall from './../../components/SinglePokemonCall/SinglePokemonCall';
 import { GlobalContext } from './../../context/GlobalState';
 import CircularProgress from "@mui/material/CircularProgress";
+import Button from '@mui/material/Button';
 
 
 const ListingPage = () => {
@@ -43,7 +44,7 @@ const ListingPage = () => {
 
 
   return (
-    <div className="app-contaner">
+    <div className="app-container">
       <h1 className="pageTitle">Pokemon Evolution</h1>
       <div className="pokemon-container">
         <div className="all-container">
@@ -76,7 +77,7 @@ const ListingPage = () => {
          
           
         </div>
-          <button className="load-more" onClick={() => getAllPokemons()}>Load more</button>
+          <Button fullWidth onClick={() => getAllPokemons()} style={{backgroundColor:"lightblue"}}>Load more</Button>
       </div>
     </div>
   )

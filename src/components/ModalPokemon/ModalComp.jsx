@@ -34,7 +34,7 @@ export default function ModalComp({children,disableBookmark , handleBookMark, id
         aria-describedby="modal-modal-description"
       >
     
-        <Box sx={style} id={id}>
+        <Box sx={style} id={id} style={{backgroundColor:"#E2F9E1"}}>
           <div>
           <Button disabled={disableBookmark}  onClick={ handleBookMark}>
           <BookmarkIcon style={{color:"green" , cursor:"pointer"}}/>
