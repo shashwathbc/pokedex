@@ -1,10 +1,12 @@
 import React  , {useEffect , useState} from 'react';
 import Chip from '@mui/material/Chip';
 
-const Filter = ({type , setType , setSelectedType , selectedType}) => {
+const Filter = ({filterPokemon}) => {
     const handleClick = () => {
         console.log('You clicked the Chip.');
       };
+
+      console.log("FILTERED POKEMON LIST" ,filterPokemon);
 
   return (
     <div>

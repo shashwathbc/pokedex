@@ -7,8 +7,7 @@ import Filter from './../../components/Filter/Filter';
 
 const ListingPage = () => {
   const [allPokemons, setAllPokemons] = useState([]);
-  const [selectedType , setSelectedType] = useState([]);
-  const [type , setType] = useState([]);
+
   const [loadMore, setLoadMore] = useState(
     "https://pokeapi.co/api/v2/pokemon?limit=10"
   );
@@ -51,10 +50,7 @@ const ListingPage = () => {
       <h1 className="pageTitle">POKEMON LISTING PAGE </h1>
       <div className="filter">
         <Filter
-        type={type}
-        setType={setType}
-        setSelectedType={setSelectedType}
-        selectedType={selectedType}
+          filterPokemon={allPokemons}
         />
       </div>
       <div className="pokemon-container">
@@ -75,6 +71,7 @@ const ListingPage = () => {
                 experience={pokemonStats.base_experience}
                 disableBookmark={disableBookmark(pokemonStats.id)}
               />
+              
             ))
           ) : (
             <CircularProgress color="success" />

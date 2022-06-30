@@ -144,3 +144,9 @@
     min-width: 50%;
     margin-top: 1rem;
   }
+
+
+  Button:disabled,
+  Button[disabled]{
+    background-color: red;
+  }
