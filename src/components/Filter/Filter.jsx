@@ -1,20 +1,31 @@
-import React  , {useEffect , useState} from 'react';
+import React  from 'react';
 import Chip from '@mui/material/Chip';
 
-const Filter = ({filterPokemon}) => {
-    const handleClick = () => {
-        console.log('You clicked the Chip.');
+const Filter = ({setAllPokemons , allPokemons}) => {
+    const handleClick = (pokeType) => {
+        const updatedItems = allPokemons.filter((curElem)=>{
+          return curElem.types[0].type.name === pokeType;
+        });
+        setAllPokemons(updatedItems);
       };
 
-      console.log("FILTERED POKEMON LIST" ,filterPokemon);
+      // console.log("FILTERED POKEMON LIST" ,filterPokemon);
+
+      // console.log(handleClick);
 
   return (
     <div>
-         <Chip label="WATER" onClick={handleClick} />
-         <Chip label="GRASS" onClick={handleClick} />
-         <Chip label="BUG" onClick={handleClick} />
-         <Chip label="FIRE" onClick={handleClick} />
-         <Chip label="NORMAL" onClick={handleClick} />
+        <span>Filter By :</span>
+         <Chip label="ALL" onClick={()=>setAllPokemons(allPokemons)} /> 
+       <Chip label="WATER" onClick={()=>handleClick("water")} /> 
+       <Chip label="GRASS" onClick={()=>handleClick("grass")} /> 
+       <Chip label="FIRE" onClick={()=>handleClick("fire")} /> 
+       <Chip label="BUG" onClick={()=>handleClick("bug")} /> 
+       <Chip label="NORMAL" onClick={()=>handleClick("normal")} /> 
+       <Chip label="POISON" onClick={()=>handleClick("poison")} /> 
+       <Chip label="ELECTRIC" onClick={()=>handleClick("electric")} /> 
+       <Chip label="GROUND" onClick={()=>handleClick("ground")} /> 
+       <Chip label="FAIRY" onClick={()=>handleClick("fairy")} /> 
     </div>
   )
 }

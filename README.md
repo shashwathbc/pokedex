@@ -1,5 +1,7 @@
 # Getting Started with Create React App
 
+![pokedex](https://user-images.githubusercontent.com/61387007/176739425-3f5ee15e-e17a-4d89-9cbf-ed24c6fe5707.PNG)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

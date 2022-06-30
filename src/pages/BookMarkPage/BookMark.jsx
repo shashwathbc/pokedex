@@ -17,8 +17,6 @@ const BookMark = () => {
                 image={pokemonStats.sprites.other.dream_world.front_default}
                 name={pokemonStats.name}
                 type={pokemonStats.types[0].type.name}
-                // handleBookMark={() => handleBookMark(pokemonStats.id)}
-
                 weight={pokemonStats.weight}
                 stat={pokemonStats.stats[0].base_stat}
                 ability={pokemonStats.abilities[0].ability.name}
@@ -28,7 +26,7 @@ const BookMark = () => {
             ))}
         </div>
       ) : (
-        <h2>NO - POKEMON - IN - BOOKMARK </h2>
+        <h2 style={{display:"flex" , alignItems:"center" , justifyContent:"center" ,height:"50vh"}}>NO - POKEMON - IN - BOOKMARK </h2>
       )}
     </div>
   );

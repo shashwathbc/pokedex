@@ -30,8 +30,10 @@ const ListingPage = () => {
     }
     createPokemonObject(data.results);
     console.log(data.results);
-    await console.log(allPokemons);
+    // console.log(allPokemons);
   };
+
+ 
 
   useEffect(() => {
     getAllPokemons();
@@ -49,9 +51,12 @@ const ListingPage = () => {
     <div className="app-container">
       <h1 className="pageTitle">POKEMON LISTING PAGE </h1>
       <div className="filter">
+      <div>
         <Filter
-          filterPokemon={allPokemons}
+        allPokemons={allPokemons}
+        setAllPokemons={setAllPokemons}
         />
+    </div>
       </div>
       <div className="pokemon-container">
         <div className="all-container">
