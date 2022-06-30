@@ -24,7 +24,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
                                        THE WEBSITE IS COMPLETELY RESPONSIVE ON ALL DEVICES   
 
 
-## HOSTED LINK OF THIS WEBSITE:
+## HOSTED LINK OF THIS WEBSITE:       https://bestpokemon-ff205.web.app/
 
 
 
