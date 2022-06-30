@@ -2,6 +2,8 @@
 
 ![pokedex](https://user-images.githubusercontent.com/61387007/176739425-3f5ee15e-e17a-4d89-9cbf-ed24c6fe5707.PNG)
 
+![pokedexResponsive](https://user-images.githubusercontent.com/61387007/176739891-99092c67-6c42-448b-830a-7f70ec27bd6b.PNG)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
