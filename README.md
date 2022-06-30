@@ -13,20 +13,25 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
             3) REACT-ROUTER-DOM  : (For Connecting Different Pages)
             4) REACT-CONTEXT-API : (To Manage The State )
             5) POKEMON-API.      : (API DATA)
+            6) FIREBASE          : (Hosting the website)
 
 1) LISTING PAGE : All the pokemon are displayed here with LOADMORE option 
                   Each pokemon when clicked will open a model where user can add the pokemon to bookmark page.
 2) BOOKMARK PAGE: In this page all the bookmarked pokemon are visible and user can remove the bookmark from 
-                  both Bookmark page and Listing page.
+                  both Bookmark page and Listing page(localstorage is used for storing the data).
 3) SEARCH PAGE  : In this page the user can type the name of the pokemon and add it to bookmark page from here also.
 
+<<<<<<< HEAD
 4) DETAIL PAGE  : When ever the pokemon is clicked this modal will open where there are more information    
                   about the pokemon with add to bookmark functionality.            
 
                      THE WEBSITE IS COMPLETELY RESPONSIVE ON ALL DEVICES   
+=======
+                                       THE WEBSITE IS COMPLETELY RESPONSIVE ON ALL DEVICES   
+>>>>>>> b54ce48e6c4e5737c396f4e16bd935b127ce4486
 
 
-## HOSTED LINK OF THIS WEBSITE:
+## HOSTED LINK OF THIS WEBSITE:       https://bestpokemon-ff205.web.app/
 
 
 
