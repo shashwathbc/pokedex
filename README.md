@@ -20,7 +20,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
                   both Bookmark page and Listing page.
 3) SEARCH PAGE  : In this page the user can type the name of the pokemon and add it to bookmark page from here also.
 
-**********************     THE WEBSITE IS COMPLETELY RESPONSIVE ON ALL DEVICES   **************************************
+4) DETAIL PAGE  : When ever the pokemon is clicked this modal will open where there are more information    
+                  about the pokemon with add to bookmark functionality.            
+
+                     THE WEBSITE IS COMPLETELY RESPONSIVE ON ALL DEVICES   
 
 
 ## HOSTED LINK OF THIS WEBSITE:

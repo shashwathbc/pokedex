@@ -5,12 +5,12 @@
     display: flex;
     justify-content: center;
     text-transform: uppercase;
-    background-color: #E2F9E1;
+    background-color: #231F20;
+    color: white;
     font-family: 'Montserrat', sans-serif;
     font-size: 5vw;   /* whatever the width of website is the 3 viewport width will be thr */
     padding-bottom: 15px;
     box-shadow: 0px 3px 5px black;
-    color: #231F20;
     z-index: 100;   /* so it will always stayes on the top */
 }
 

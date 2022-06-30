@@ -31,11 +31,11 @@ export default function Footer() {
           setValue(newValue);
         }}
         className="footerstyle"
-        style={{ backgroundColor:"#E2F9E1" ,display:"flex" , justifyContent:"space-around" , border:"1px solid black"}}
+        style={{ backgroundColor:"#231F20",color: "white",display:"flex" , justifyContent:"space-around" , border:"1px solid white"}}
       >
-        <BottomNavigationAction style={{color : "black"}} label="LISTING" icon={<HomeIcon />} />
-        <BottomNavigationAction style={{color : "black"}} label="BOOKMARKS" icon={<BookmarkIcon />} />
-        <BottomNavigationAction style={{color : "black"}} label="SEARCH" icon={<ManageSearchIcon />} />
+        <BottomNavigationAction style={{color : "white"}} label="LISTING" icon={<HomeIcon />} />
+        <BottomNavigationAction style={{color : "white"}} label="BOOKMARKS" icon={<BookmarkIcon />} />
+        <BottomNavigationAction style={{color : "white"}} label="SEARCH" icon={<ManageSearchIcon />} />
       </BottomNavigation>
     </Box>
   );
