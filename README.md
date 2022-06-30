@@ -7,8 +7,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## ABOUT THE PROJECT:
-
-TECH USED : 1) React             : (FrameWork)
+            TECH USED :
+            1) React             : (FrameWork)
             2) MUI               : (For Designing)
             3) REACT-ROUTER-DOM  : (For Connecting Different Pages)
             4) REACT-CONTEXT-API : (To Manage The State )
