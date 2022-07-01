@@ -1,8 +1,19 @@
 # Getting Started with Create React App
 
-![pokedex](https://user-images.githubusercontent.com/61387007/176739425-3f5ee15e-e17a-4d89-9cbf-ed24c6fe5707.PNG)
+![1](https://user-images.githubusercontent.com/61387007/176857830-6c5e022c-56d4-4e39-9d54-1f60e3d1c98b.PNG)
 
-![pokedexResponsive](https://user-images.githubusercontent.com/61387007/176739891-99092c67-6c42-448b-830a-7f70ec27bd6b.PNG)
+
+![2](https://user-images.githubusercontent.com/61387007/176857956-5534c9eb-77ec-484e-b2fa-789413b03eba.PNG)
+
+![3](https://user-images.githubusercontent.com/61387007/176858001-18661566-0b84-4ced-a099-267f3fecb7db.PNG)
+
+
+![4](https://user-images.githubusercontent.com/61387007/176858048-cc2977b9-80a5-4bae-be05-91d01185a1ca.PNG)
+
+![5](https://user-images.githubusercontent.com/61387007/176858104-653b2ceb-9bc2-4d25-b82d-ab6e89970f9d.PNG)
+
+
+![6](https://user-images.githubusercontent.com/61387007/176858155-b46f2cf9-c4f8-4bf9-bc2e-135a40d395b0.PNG)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

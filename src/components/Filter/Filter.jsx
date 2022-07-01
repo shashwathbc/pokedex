@@ -1,22 +1,9 @@
-import React , {useEffect} from 'react';
+import React  from 'react';
 import Chip from '@mui/material/Chip';
 import { Grid } from '@mui/material';
 
 
-const Filter = ({setAllPokemons , allPokemons}) => {
-  
-  
- 
-    const handleClick = (pokeType) => {
-      const updatedItems = allPokemons.filter((curElem)=>{
-        return curElem.types[0].type.name === pokeType;
-      });
-      setAllPokemons(updatedItems);
-    };
-
-  
-  
-
+const Filter = ({setAllPokemons , allPokemons , handleClick}) => {
   return (
     <Grid style={{marginTop:"15px" , marginBottom:"10px"}}>
         <span>Filter By :</span>

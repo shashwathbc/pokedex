@@ -33,10 +33,17 @@ const ListingPage = () => {
     // console.log(allPokemons);
   };
  
+  const handleClick = (pokeType) => {
+    const updatedItems = allPokemons.filter((curElem)=>{
+      return curElem.types[0].type.name === pokeType;
+    });
+    setAllPokemons(updatedItems);
+  };
 
   useEffect(() => {
     getAllPokemons();
   }, []);
+
 
   const { handleBookMark, bookmark } = useContext(GlobalContext);
 
@@ -46,6 +53,9 @@ const ListingPage = () => {
     return disableBook;
   };
 
+ 
+
+
   return (
     <div className="app-container">
       <h1 className="pageTitle">POKEMON LISTING PAGE </h1>
@@ -54,6 +64,7 @@ const ListingPage = () => {
         <Filter
         allPokemons={allPokemons}
         setAllPokemons={setAllPokemons}
+        handleClick={handleClick}
         />
     </div>
       </div>
