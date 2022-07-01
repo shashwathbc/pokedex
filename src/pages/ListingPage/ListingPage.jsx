@@ -41,8 +41,9 @@ const ListingPage = () => {
   };
 
   useEffect(() => {
+    // eslint-disable-next-line
     getAllPokemons();
-  }, []);
+  }, [handleClick]);
 
 
   const { handleBookMark, bookmark } = useContext(GlobalContext);
