@@ -4,7 +4,7 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import BookmarkIcon from '@mui/icons-material/Bookmark';
-
+import CloseIcon from '@mui/icons-material/Close';
 import LinearProgress from '@mui/material/LinearProgress';
 import { Grid } from '@mui/material';
 
@@ -13,7 +13,7 @@ const style = {
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
-  width: 400,
+  width: 200,
   border: '2px solid #000',
   boxShadow: 24,
   p: 4,
@@ -38,12 +38,14 @@ export default function ModalComp({children,disableBookmark , handleBookMark, id
       >
     
         <Box sx={style} id={id} className={modalStyle} >
-          <div  style={{marginRight:"100%"}}>
+          <div>
           <Button disabled={disableBookmark}  onClick={ handleBookMark}>
-          <BookmarkIcon style={{color:"green" , cursor:"pointer"}}/>
+          <BookmarkIcon style={{color:"green" , cursor:"pointer" , marginRight:"90px"}} />
           </Button>
-          </div>
-        
+          <Button onClick={handleClose}>
+            <CloseIcon  style={{color:"red" , cursor:"pointer" }}/>
+            </Button>
+          </div> 
             <img src={image}/>
             <Grid >
             <Typography variant="h3" component="h2" >

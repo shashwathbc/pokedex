@@ -32,7 +32,6 @@ const ListingPage = () => {
     console.log(data.results);
     // console.log(allPokemons);
   };
-
  
 
   useEffect(() => {
