@@ -25,12 +25,12 @@ const ListingPage = () => {
         );
         const data = await res.json();
         setAllPokemons((currentList) => [...currentList, data]);
-        await allPokemons.sort((a, b) => a.id - b.id);
+        // await allPokemons.sort((a, b) => a.id - b.id);
       });
     }
     createPokemonObject(data.results);
     console.log(data.results);
-    // console.log(allPokemons);
+    console.log(allPokemons);
   };
  
   const handleClick = (pokeType) => {
@@ -43,7 +43,7 @@ const ListingPage = () => {
   useEffect(() => {
     // eslint-disable-next-line
     getAllPokemons();
-  }, [handleClick]);
+  }, []);    //handleClick
 
 
   const { handleBookMark, bookmark } = useContext(GlobalContext);

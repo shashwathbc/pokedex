@@ -25,7 +25,7 @@ export default function ModalComp({children,disableBookmark , handleBookMark, id
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
-  const modalStyle = `thumb-container ${type} `;
+  const modalStyle =  type + " thumb-container";;
 
   return (
     <div>
